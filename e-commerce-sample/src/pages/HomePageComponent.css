@@ -1,0 +1,4 @@
+.home_page_cmp_root {
+    display: flex;
+    flex-direction: column;
+}

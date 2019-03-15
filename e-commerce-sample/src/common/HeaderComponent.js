@@ -1,15 +1,29 @@
 import React from 'react';
+import { Container, Col, Row, Button } from 'react-bootstrap';
 
 const HeaderComponent = () => {
     return (
         <div style={styles.rootStyle}>
             <div style={styles.contentContainerStyle}>
                 <img style={styles.imageStyle} src='favicon.ico'></img>
-                <div style={styles.buttonContainerStyle}>
+                {/* <div style={styles.buttonContainerStyle}>
                     <button style={styles.buttonStyle}>PRODUCTS</button>
                     <button style={styles.buttonStyle}>ABOUT</button>
                     <button style={styles.buttonStyle}>CONTACT</button>
-                </div>
+                </div> */}
+                <Container style={styles.buttonContainerStyle}>
+                    <Row>
+                        <Col>
+                            <Button variant="dark">PRODUCTS</Button>
+                        </Col>
+                        <Col>
+                            <Button variant="dark">ABOUT</Button>
+                        </Col>
+                        <Col>
+                            <Button variant="dark">CONTACT</Button>
+                        </Col>
+                    </Row>
+                </Container>
             </div>
         </div>
     );
@@ -19,13 +33,14 @@ const styles = {
     rootStyle: {
         width: '100%',
         height: '20%',
-        boxShadow: '0px 5px 1px #ecf0f1',
+        boxShadow: '0px 5px 1px darkgrey',
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#FFF',
-        padding: '10px'
+        padding: '10px',
+        marginBottom: '4px'
     },
 
     contentContainerStyle: {
@@ -41,11 +56,15 @@ const styles = {
         backgroundColor: '#bdc3c7'
     },
 
+    // buttonContainerStyle: {
+    //     width: '100%',
+    //     marginTop: '10px',
+    //     display: 'flex',
+    //     flexDirection: 'row'
+    // },
+
     buttonContainerStyle: {
-        width: '100%',
-        marginTop: '10px',
-        display: 'flex',
-        flexDirection: 'row'
+        marginTop: '10px'
     },
 
     buttonStyle: {

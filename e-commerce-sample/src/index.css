@@ -12,3 +12,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 12px
+}
+
+p {
+  font-size: 14px;
+  padding: 10px;
+}
