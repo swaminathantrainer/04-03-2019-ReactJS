@@ -6,11 +6,11 @@ import "./HomePageComponent.css";
 const bannerTitle = "SAMPLE TITLE 2";
 const bannerSubTitle = "as dasd asd asd asd asd asd as das dasd";
 const bannerImages = [
-    "https://picsum.photos/300/200",
-    "https://picsum.photos/300/200",
-    "https://picsum.photos/300/200",
-    "https://picsum.photos/300/200",
-    "https://picsum.photos/300/200"
+    "https://loremflickr.com/320/240/dog",
+    "https://loremflickr.com/g/320/240/paris",
+    "https://loremflickr.com/320/240/brazil,rio",
+    "https://loremflickr.com/320/240/paris,girl/all",
+    "https://loremflickr.com/320/240?random=1"
 ]
 
 class HomePageComponent extends Component {
