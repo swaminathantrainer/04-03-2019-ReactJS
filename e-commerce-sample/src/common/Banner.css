@@ -17,6 +17,8 @@
 .banner_image {
     width: auto;
     height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .content_holder {

@@ -1,31 +1,34 @@
 import React from 'react';
+import Card from '../common/Card'
 import { Container, Col, Row, Button } from 'react-bootstrap';
 
 const HeaderComponent = () => {
     return (
-        <div style={styles.rootStyle}>
-            <div style={styles.contentContainerStyle}>
-                <img style={styles.imageStyle} src='favicon.ico'></img>
-                {/* <div style={styles.buttonContainerStyle}>
+        <Card>
+            <div style={styles.rootStyle}>
+                <div style={styles.contentContainerStyle}>
+                    <img style={styles.imageStyle} src='favicon.ico'></img>
+                    {/* <div style={styles.buttonContainerStyle}>
                     <button style={styles.buttonStyle}>PRODUCTS</button>
                     <button style={styles.buttonStyle}>ABOUT</button>
                     <button style={styles.buttonStyle}>CONTACT</button>
                 </div> */}
-                <Container style={styles.buttonContainerStyle}>
-                    <Row>
-                        <Col>
-                            <Button variant="dark">PRODUCTS</Button>
-                        </Col>
-                        <Col>
-                            <Button variant="dark">ABOUT</Button>
-                        </Col>
-                        <Col>
-                            <Button variant="dark">CONTACT</Button>
-                        </Col>
-                    </Row>
-                </Container>
+                    <Container style={styles.buttonContainerStyle}>
+                        <Row>
+                            <Col>
+                                <Button variant="dark">PRODUCTS</Button>
+                            </Col>
+                            <Col>
+                                <Button variant="dark">ABOUT</Button>
+                            </Col>
+                            <Col>
+                                <Button variant="dark">CONTACT</Button>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
             </div>
-        </div>
+        </Card>
     );
 };
 
@@ -33,7 +36,6 @@ const styles = {
     rootStyle: {
         width: '100%',
         height: '20%',
-        boxShadow: '0px 5px 1px darkgrey',
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'center',

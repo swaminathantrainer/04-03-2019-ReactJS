@@ -1,0 +1,24 @@
+.item_listing_root {
+    width: 100%;
+}
+
+.item_listing_container {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: repeat(5, 20%);
+    grid-auto-rows: 200px;
+}
+
+@media (max-device-width: 480px) {
+    .item_listing_container {
+        grid-template-columns: 100%;
+    }
+}
+
+@media (min-device-width: 480px) and (max-device-width: 1024px) {
+    .item_listing_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
